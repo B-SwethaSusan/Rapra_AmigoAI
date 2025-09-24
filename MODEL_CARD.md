@@ -88,27 +88,27 @@ Some sentences contain positive-sounding words (“great,” “amazing”) alon
 
 ### Fairness & Robustness Observations
 
-**Typos and Misspellings**
+**Typos and Misspellings** :
 Many examples in your dataset contain spelling errors (“latecny” instead of “latency”, “feles” instead of “feels”, “laetncy” instead of “latency”).
 The model sometimes misclassifies these sentences because tokenizers treat misspelled words as unknown tokens or poorly contextualized embeddings.
 - Observation: The model’s robustness decreases with noisy or misspelled inputs unless explicitly trained with noisy data augmentation.
 
-**Emojis**
+**Emojis** :
 Emojis (e.g., 😡, ✅, 🥴, 💯, 🚀) appear in several reviews.
 The model handles emojis inconsistently — sometimes ignoring them or misinterpreting their sentiment.
 - Observation: Emojis can carry strong sentiment signals (positive or negative), and ignoring them reduces the model’s accuracy for sentiment-heavy reviews.
 
-**Code-switching / Mixed Language Content**
+**Code-switching / Mixed Language Content** :
 A few examples contain mixed-language phrases or transliterations (“yaar”, “mast”, “fari”, “jugaad”).
 The tokenizer and model were trained mostly on English data, so code-switching lowers accuracy.
 - Observation: The model lacks robustness for code-switched text and requires multilingual fine-tuning or additional preprocessing to handle such cases effectively.
 
-**Noisy Phrases & Repetition**
+**Noisy Phrases & Repetition** :
 Several reviews contain repeated keywords (“build build build”, “charging charging charging”), which add noise without extra meaning.
 The model sometimes overweights repeated keywords, leading to incorrect sentiment prediction.
 - Observation: This indicates a lack of robustness against noisy or redundant input, which could be addressed with preprocessing or noise-aware training.
 
-**Domain-specific Terms**
+**Domain-specific Terms** :
 Several reviews contain technical or product-specific terms (“latency”, “firmware”, “pairing”), which may have sentiment implications depending on context.
 The model sometimes misinterprets these terms if they are underrepresented in the training data, leading to incorrect sentiment classification.
 - Observation: This indicates a lack of robustness to domain-specific vocabulary, which could be addressed with domain adaptation or fine-tuning on similar product review datasets.
