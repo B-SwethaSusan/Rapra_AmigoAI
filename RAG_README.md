@@ -9,7 +9,7 @@ For retrieval, we used **sentence-transformers/all-MiniLM-L6-v2** embeddings wit
 3. **Effectiveness**: It performs well on semantic similarity tasks despite its smaller size.
 4. **Hardware Compatibility**: It runs efficiently on both CPU and GPU.
 
-We implemented a two-stage retrieval process:
+I implemented a two-stage retrieval process:
 1. Encode all document chunks into embeddings during initialization.
 2. For each query, compute its embedding and find the most similar document chunks using cosine similarity.
 
@@ -19,7 +19,7 @@ We implemented a two-stage retrieval process:
 
 ## Local LLM Choice
 
-We used **TinyLlama-1.1B-Chat** as our local LLM for several reasons:
+I used **TinyLlama-1.1B-Chat** as our local LLM for several reasons:
 
 1. **Resource Efficiency**: With 1.1B parameters, it’s lightweight enough for consumer hardware.
 2. **Speed**: It provides faster inference compared to larger models.
@@ -35,7 +35,7 @@ To keep the system lightweight, we:
 ## Experiment: Model and Parameter Optimization
 
 ### Language Models Tested
-We evaluated several language models to find the best balance between performance and resource needs:
+I evaluated several language models to find the best balance between performance and resource needs:
 
 1. **TinyLlama-1.1B-Chat** (Selected)
    - Size: 1.1B parameters
@@ -65,15 +65,15 @@ We evaluated several language models to find the best balance between performanc
 This approach achieved 85% accuracy on our test set while maintaining reasonable response times.
 
 #### Semantic Search with Cosine Similarity
-- We used cosine similarity to measure how semantically related the query and document chunks were.
-- We normalized embeddings (L2 normalization) for efficient cosine similarity calculation through the dot product.
+- I used cosine similarity to measure how semantically related the query and document chunks were.
+-I normalized embeddings (L2 normalization) for efficient cosine similarity calculation through the dot product.
 - Benefits:
   - Captures semantic relationships beyond exact keyword matching.
   - Efficient for real-time retrieval.
   - Works well with transformer-based embeddings.
 
 #### Embedding Models: 
-We tested multiple embedding models to find the best balance between semantic understanding and computational efficiency:
+I tested multiple embedding models to find the best balance between semantic understanding and computational efficiency:
 
 1. **sentence-transformers/all-MiniLM-L6-v2 (Selected)**
    - Dimension: 384.
@@ -93,7 +93,7 @@ We tested multiple embedding models to find the best balance between semantic un
 Regarding the Top-k tokens, I experimented with changing the threshold values and top-k tokens, resulting in different outputs.
 
 #### Top-k Tokens
-- We increased the number of retrieved chunks (top-k=5) to improve answer coverage.
+- I increased the number of retrieved chunks (top-k=5) to improve answer coverage.
 - Larger context windows helped find answers that might be in multiple chunks.
 - Trade-off: Higher computational cost versus better answer quality.
 
@@ -108,13 +108,12 @@ We selected a threshold of 0.47 for the best balance between relevance and cover
 
 ### Prompt Engineering
 To improve response quality and reduce hallucinations:
-1. We added clear instructions to only use the provided context.
-2. We set strict answer length limits.
-3. We required precise, one-sentence responses.
-4. We included a fallback to "Not found in context" when confidence is low.
-5. We iteratively tested and refined prompts to minimize verbosity and redundancy.
+1. I added clear instructions to only use the provided context.
+2. I set strict answer length limits.
+3. I required precise, one-sentence responses.
+4. I included a fallback to "Not found in context" when confidence is low.
+5. I iteratively tested and refined prompts to minimize verbosity and redundancy.
 
-## Prompting Strategy
 
 ### Prompt Structure
 Our prompts are carefully engineered to ensure accurate and concise responses:
@@ -134,25 +133,6 @@ Our prompts are carefully engineered to ensure accurate and concise responses:
    - For technical specifications: Includes instructions for exact values and units
    - For comparison questions: Explicitly asks to list differences/similarities
    - For procedural queries: Requests step-by-step instructions
-
-### Citation and Source Handling
-
-1. **In-Text References**:
-   - Each retrieved document is assigned a unique ID based on its position in the results
-   - Facts are directly followed by their source ID in square brackets (e.g., [1], [2])
-   - Multiple sources for the same fact are combined: [1,3]
-   - Example: "The system supports both HTTP/1.1 and HTTP/2 protocols [1,3]"
-
-2. **Source Attribution**:
-   - When available, includes document title and section
-   - For web sources, includes the domain and last accessed date
-   - Example:
-     ```
-     Sources:
-     [1] VulcanGraph API Reference v3.1.2, Section 4.5
-     [2] docs.rapra.com/configuration, Last accessed: 2025-09-24
-     ```
-
 
 ## Hallucination Mitigation
 

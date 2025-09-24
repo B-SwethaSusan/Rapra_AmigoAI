@@ -7,23 +7,11 @@ This repository contains two main projects:
 
 ## Quick Start
 
-### Google Colab
-
-1. Open the notebook in Google Colab:
-   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/Project_AmigoAI/blob/main/src/train.ipynb) Sentiment Analysis
-   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/Project_AmigoAI/blob/main/src/rag_answer.ipynb) RAG System
-
-2. Mount your Google Drive (when prompted):
-   ```python
-   from google.colab import drive
-   drive.mount('/content/drive')
-   ```
-
 ### Local Setup
 
 1. Clone the repository and install dependencies:
    ```bash
-   git clone https://github.com/yourusername/Project_AmigoAI.git
+   git clone https://github.com/B-SwethaSusan/Rapra_AmigoAI
    cd Project_AmigoAI
    pip install -r requirements.txt
    ```
@@ -58,7 +46,7 @@ This repository contains two main projects:
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/B-SwethaSusan/Rapra_AmigoAI>
    cd Project_AmigoAI
    ```
 
@@ -66,8 +54,8 @@ This repository contains two main projects:
 
    ```bash
    python -m venv venv
-   source venv/bin/activate   # Linux/macOS
-   venv\Scripts\activate    # Windows
+   source venv/bin/activate   
+   venv\Scripts\activate    
    ```
 
 3. **Install dependencies:**
@@ -93,7 +81,7 @@ This repository contains two main projects:
    # Configuration
    MODEL_NAME = "distilbert-base-uncased"
    DATA_DIR = "../data/sentiment"
-   OUTPUT_DIR = "../models/sentiment"
+   OUTPUT_DIR = "../submissions/sentiment_test_predictions.csv"
    BATCH_SIZE = 16
    LEARNING_RATE = 2e-5
    NUM_EPOCHS = 5
@@ -111,10 +99,9 @@ This repository contains two main projects:
 1. In the same notebook, navigate to the "Inference" section
 2. Update the prediction parameters if needed:
    ```python
-   # Prediction configuration
-   MODEL_PATH = "../models/sentiment"  # Path to your trained model
+   MODEL_PATH = "../src/train.ipynb"  
    INPUT_FILE = "../data/sentiment/test.csv"
-   OUTPUT_FILE = "../submissions/sentiment_predictions.csv"
+   OUTPUT_FILE = "../submissions/sentiment_test_predictions.csv"
    ```
 3. Run the inference cells to generate predictions
 
@@ -141,9 +128,9 @@ This repository contains two main projects:
    # Configuration
    DOCS_PATH = "../data/corpus/docs.jsonl"
    QUESTIONS_PATH = "../data/corpus/questions.json"
-   OUTPUT_DIR = "../submissions"
+   OUTPUT_DIR = "../submissions/rag_answers.json"
    MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
-   TOP_K = 5  # Number of documents to retrieve for each question
+   TOP_K = 5 
    ```
 
 3. **Run all cells** to:
