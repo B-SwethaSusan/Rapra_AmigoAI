@@ -1,0 +1,263 @@
+[
+  {
+    "id": "q0",
+    "question": "State a key feature of NebulaDB.",
+    "answers": [
+      "nebuladb",
+      "lightweight",
+      "document",
+      "store",
+      "built",
+      "edge"
+    ]
+  },
+  {
+    "id": "q1",
+    "question": "State a key feature of NebulaDB.",
+    "answers": [
+      "supports",
+      "json",
+      "documents",
+      "with",
+      "automatic",
+      "schema"
+    ]
+  },
+  {
+    "id": "q2",
+    "question": "State a key feature of NebulaDB.",
+    "answers": [
+      "nebuladb",
+      "uses",
+      "crdt-based",
+      "replication",
+      "protocol",
+      "offline-first"
+    ]
+  },
+  {
+    "id": "q3",
+    "question": "What is the default port for NebulaDB?",
+    "answers": [
+      "7342",
+      "port 7342"
+    ]
+  },
+  {
+    "id": "q4",
+    "question": "Name one role available in NebulaDB RBAC.",
+    "answers": [
+      "reader",
+      "writer",
+      "admin"
+    ]
+  },
+  {
+    "id": "q5",
+    "question": "Name one RL algorithm included in MercuryRL.",
+    "answers": [
+      "PPO",
+      "SAC",
+      "ppo",
+      "sac"
+    ]
+  },
+  {
+    "id": "q6",
+    "question": "Name one RL algorithm included in MercuryRL.",
+    "answers": [
+      "PPO",
+      "SAC",
+      "ppo",
+      "sac"
+    ]
+  },
+  {
+    "id": "q7",
+    "question": "Name one RL algorithm included in MercuryRL.",
+    "answers": [
+      "PPO",
+      "SAC",
+      "ppo",
+      "sac"
+    ]
+  },
+  {
+    "id": "q8",
+    "question": "Name one RL algorithm included in MercuryRL.",
+    "answers": [
+      "PPO",
+      "SAC",
+      "ppo",
+      "sac"
+    ]
+  },
+  {
+    "id": "q9",
+    "question": "Name one RL algorithm included in MercuryRL.",
+    "answers": [
+      "PPO",
+      "SAC",
+      "ppo",
+      "sac"
+    ]
+  },
+  {
+    "id": "q10",
+    "question": "State a key feature of AuroraCalc.",
+    "answers": [
+      "auroracalc",
+      "symbolic",
+      "math",
+      "library",
+      "polynomials"
+    ]
+  },
+  {
+    "id": "q11",
+    "question": "State a key feature of AuroraCalc.",
+    "answers": [
+      "factor",
+      "polynomials",
+      "over",
+      "integers",
+      "rationals"
+    ]
+  },
+  {
+    "id": "q12",
+    "question": "State a key feature of AuroraCalc.",
+    "answers": [
+      "auroracalc",
+      "exposes",
+      "python",
+      "called",
+      "aurora.poly",
+      "polynomial"
+    ]
+  },
+  {
+    "id": "q13",
+    "question": "State a key feature of AuroraCalc.",
+    "answers": [
+      "large",
+      "degrees",
+      "auroracalc",
+      "switches",
+      "fft-based",
+      "multiplication"
+    ]
+  },
+  {
+    "id": "q14",
+    "question": "Which library exports expressions to LaTeX?",
+    "answers": [
+      "AuroraCalc",
+      "auroracalc"
+    ]
+  },
+  {
+    "id": "q15",
+    "question": "State a key feature of AtlasNLP.",
+    "answers": [
+      "atlasnlp",
+      "multilingual",
+      "text",
+      "processing",
+      "suite"
+    ]
+  },
+  {
+    "id": "q16",
+    "question": "State a key feature of AtlasNLP.",
+    "answers": [
+      "provides",
+      "sentence",
+      "splitting",
+      "lemmatization",
+      "languages"
+    ]
+  },
+  {
+    "id": "q17",
+    "question": "In what format are AtlasNLP models packaged for portability?",
+    "answers": [
+      "ONNX",
+      "onnx"
+    ]
+  },
+  {
+    "id": "q18",
+    "question": "State a key feature of AtlasNLP.",
+    "answers": [
+      "atlasnlp",
+      "rule-based",
+      "fallback",
+      "rare",
+      "tokens"
+    ]
+  },
+  {
+    "id": "q19",
+    "question": "State a key feature of AtlasNLP.",
+    "answers": [
+      "dictionaries",
+      "configured",
+      "atlas.yml"
+    ]
+  },
+  {
+    "id": "q20",
+    "question": "State a key feature of VulcanGraph.",
+    "answers": [
+      "vulcangraph",
+      "property",
+      "graph",
+      "database",
+      "with",
+      "gremlin-like"
+    ]
+  },
+  {
+    "id": "q21",
+    "question": "State a key feature of VulcanGraph.",
+    "answers": [
+      "supports",
+      "acid",
+      "transactions",
+      "with",
+      "snapshot",
+      "isolation"
+    ]
+  },
+  {
+    "id": "q22",
+    "question": "State a key feature of VulcanGraph.",
+    "answers": [
+      "indexes",
+      "created",
+      "label",
+      "property"
+    ]
+  },
+  {
+    "id": "q23",
+    "question": "State a key feature of VulcanGraph.",
+    "answers": [
+      "bulk",
+      "loads",
+      "stream",
+      "with",
+      "vgraph",
+      "load"
+    ]
+  },
+  {
+    "id": "q24",
+    "question": "What is the default port for VulcanGraph?",
+    "answers": [
+      "7787",
+      "port 7787"
+    ]
+  }
+]

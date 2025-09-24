@@ -1,0 +1,27 @@
+{"id": "d0", "title": "NebulaDB", "text": "The default port for NebulaDB is 7342. NebulaDB provides role-based access control with three roles: reader, writer, admin."}
+{"id": "d1", "title": "NDB", "text": "It supports JSON documents with automatic schema inference. NebulaDB is a lightweight document store built for edge devices. NebulaDB uses a CRDT-based replication protocol for offline-first apps. Defaults are sensible for most users."}
+{"id": "d2", "title": "NebulaDB", "text": "NebulaDB release notes mention minor UI tweaks and logging improvements."}
+{"id": "d3", "title": "NebulaDB", "text": "NebulaDB release notes mention minor UI tweaks and logging improvements."}
+{"id": "d4", "title": "NebulaDB", "text": "Users on forums discussed NebulaDB tutorials and workshop schedules."}
+{"id": "d5", "title": "MercuryRL", "text": "MercuryRL uses YAML experiment manifests. Sim2real transfer is assisted by domain randomization utilities."}
+{"id": "d6", "title": "MercuryRL", "text": "Trajectories can be exported to NumPy NPZ files. It integrates with CI/CD tools."}
+{"id": "d7", "title": "MercuryRL", "text": "It includes PPO and SAC reference implementations. It integrates with CI/CD tools."}
+{"id": "d8", "title": "MercuryRL", "text": "MercuryRL is a reinforcement learning toolkit for robotics."}
+{"id": "d9", "title": "MercuryRL", "text": "MercuryRL community survey results will be published next quarter."}
+{"id": "d10", "title": "MercuryRL", "text": "Users on forums discussed MercuryRL tutorials and workshop schedules."}
+{"id": "d11", "title": "MercuryRL", "text": "MercuryRL community survey results will be published next quarter."}
+{"id": "d12", "title": "MercuryRL", "text": "MercuryRL release notes mention minor UI tweaks and logging improvements."}
+{"id": "d13", "title": "AuroraCalc", "text": "For large degrees, AuroraCalc switches to FFT-based multiplication. AuroraCalc is a symbolic math library for polynomials. It can factor polynomials over the integers and rationals."}
+{"id": "d14", "title": "AuroraCalc", "text": "AuroraCalc exposes a Python API called `aurora.poly` for polynomial ops."}
+{"id": "d15", "title": "Aurora Calc", "text": "It supports exporting expressions to LaTeX."}
+{"id": "d16", "title": "Aurora Calc", "text": "Aurora Calc community survey results will be published next quarter."}
+{"id": "d17", "title": "AtlasNLP", "text": "AtlasNLP is a multilingual text processing suite. It provides sentence splitting, NER, and lemmatization for 50+ languages. It integrates with CI/CD tools."}
+{"id": "d18", "title": "AtlasNLP", "text": "AtlasNLP has a rule-based fallback for rare tokens. Models are packaged in ONNX format for portability. Dictionaries are configured in `atlas.yml`."}
+{"id": "d19", "title": "AtlasNLP", "text": "Users on forums discussed AtlasNLP tutorials and workshop schedules."}
+{"id": "d20", "title": "AtlasNLP", "text": "AtlasNLP community survey results will be published next quarter."}
+{"id": "d21", "title": "AtlasNLP", "text": "AtlasNLP community survey results will be published next quarter."}
+{"id": "d22", "title": "AtlasNLP", "text": "AtlasNLP community survey results will be published next quarter."}
+{"id": "d23", "title": "VulcanGraph", "text": "It exposes a REST API on port 7787 by default."}
+{"id": "d24", "title": "VulcanGraph", "text": "Indexes can be created per label and property. It supports ACID transactions with snapshot isolation. VulcanGraph is a property graph database with Gremlin-like traversal."}
+{"id": "d25", "title": "VulcanGraph", "text": "Bulk loads stream via CSV with a `vgraph load` command."}
+{"id": "d26", "title": "VulcanGraph", "text": "Users on forums discussed VulcanGraph tutorials and workshop schedules."}
